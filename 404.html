@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>동행</title><script>
+(function () {
+  var prefix = "/dongheng-demo";
+  var rest = location.pathname.indexOf(prefix + '/') === 0 ? location.pathname.slice(prefix.length) : location.pathname;
+  var m = rest.match(/^\/(web|admin)(\/.*)?$/);
+  location.replace(m ? prefix + '/' + m[1] + '/?__p=' + encodeURIComponent((m[2] || '/') + location.search + location.hash) : prefix + '/');
+})();
+</script>
